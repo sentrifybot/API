@@ -44,6 +44,13 @@ To use the Sentrify API, you first need an API key. To obtain an API key:
   - `api_key`: The API key for authentication.
   - `prompt`: The prompt to send to the AI.
 
+### `/api/cats/random`
+- **Method**: GET
+- **Description**: Returns a random cat image. (No Auth)
+- **Parameters**:
+  - None.
+
+
 ## Rate Limiting
 
 The Sentrify API implements rate limiting to ensure fair usage. Each endpoint may have different limits. For example, the `/api/ai/chat` endpoint allows up to 100 requests per day per API key, while other endpoints may have different limits. Exceeding these limits will result in a `429 Too Many Requests` response.
